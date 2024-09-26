@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@master-skeleton-full-stack/shared-ui": ["libraries/shared-ui/src/index.ts"],
       "@master-skeleton-full-stack/types": ["libraries/types/src/index.ts"]
     }
   },

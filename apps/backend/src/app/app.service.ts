@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { Message } from '@master-skeleton-full-stack/types'
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
-    return { message: 'Hello API again!!' };
+  getData(): Message {
+    return { message: 'Hello API again'};
   }
 }

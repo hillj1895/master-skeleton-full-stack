@@ -1,9 +1,10 @@
 {
-  "name": "@nx-skeleton-take-three/source",
+  "name": "@master-skeleton-full-stack/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx run-many --target=serve --projects=frontend-web,backend --parallel"
+    "dev": "nx run-many --target=serve --projects=frontend-web,backend --parallel",
+    "dev:backend": "nx run backend:serve --watch"
   },
   "private": true,
   "dependencies": {

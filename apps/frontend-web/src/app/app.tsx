@@ -1,15 +1,16 @@
-import { Message } from '@master-skeleton-full-stack/types'
-import { Button, Variant } from '@master-skeleton-full-stack/shared-ui';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from '../pages/home';
 
 export function App() {
-  const message: Message = { message: 'Hello world' };
   return (
-    <div className='container mx-auto'>
-      <Button onClick={() => console.log('Button click works!')} variant={Variant.PRIMARY}>{message.message}</Button>
-      <Button onClick={() => console.log('Button click works!')} variant={Variant.SECONDARY}>{message.message}</Button>
-      <Button onClick={() => console.log('Button click works!')} variant={Variant.TERTIARY}>{message.message}</Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
 
 export default App;

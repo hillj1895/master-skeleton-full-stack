@@ -1,12 +1,15 @@
 import React from "react";
 import { Message } from '@master-skeleton-full-stack/types'
 import { Button, Variant } from '@master-skeleton-full-stack/shared-ui';
+import { useLocation } from "react-router-dom";
 
 
-export const Home: React.FC = () => {
+export const HomePage: React.FC = () => {
   const message: Message = { message: 'Hello from the frontend' };
+  // const location = useLocation()
   return (
     <div className='container mx-auto'>
+      <div>Path : {useLocation().pathname}</div>
       <Button onClick={() => console.log('Button click works!')} variant={Variant.PRIMARY}>{message.message}</Button>
       <Button onClick={() => console.log('Button click works!')} variant={Variant.SECONDARY}>{message.message}</Button>
       <Button onClick={() => console.log('Button click works!')} variant={Variant.TERTIARY}>{message.message}</Button>
@@ -14,4 +17,4 @@ export const Home: React.FC = () => {
   );
 }
 
-export default Home;
+export default HomePage;

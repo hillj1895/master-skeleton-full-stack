@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Message } from '@master-skeleton-full-stack/types'
+import { Message } from '@internal/types'
 
 @Injectable()
 export class AppService {

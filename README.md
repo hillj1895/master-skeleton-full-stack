@@ -1,3 +1,11 @@
+# Steps to set up a new app
+- Search and replace master-skeleton-full-stack to new repo name
+- Set up database
+  - `ssh joe@192.168.4.93`
+  - `/home/db-util/make-database.sh <new-db-name> <password>`
+
+
+
 # NxSkeletonTakeThree
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

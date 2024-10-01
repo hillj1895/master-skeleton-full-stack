@@ -1,7 +1,7 @@
-import React from "react";
-import { Message } from '@master-skeleton-full-stack/types'
-import { Button, Variant } from '@master-skeleton-full-stack/shared-ui';
-import { useLocation } from "react-router-dom";
+import React from 'react';
+import { Message } from '@internal/types'
+import { Button, Variant } from '@internal/shared-ui';
+import { useLocation } from 'react-router-dom';
 
 
 export const HomePage: React.FC = () => {

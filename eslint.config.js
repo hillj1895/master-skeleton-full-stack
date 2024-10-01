@@ -24,6 +24,7 @@ module.exports = [
         },
       ],
       '@typescript-eslint/no-explicit-any': 'off',
+      'quotes': [2, 'single']
     },
   },
   {

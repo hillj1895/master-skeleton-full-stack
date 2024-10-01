@@ -10,4 +10,9 @@ export class AppController {
   getData() {
     return this.appService.getData();
   }
+
+  @Get('test-data')
+  getTestData() {
+    return this.appService.getTestData();
+  }
 }
